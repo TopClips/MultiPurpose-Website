@@ -311,11 +311,11 @@ header {
 .feature2 i,
 .feature2 h4,
 .feature2 .cta {
-    color: #888889;
+    color: #ad1d35;
 }
 
 .feature2:hover {
-    border: 2px solid #425fca;
+    border: 2px solid #ad1d35;
 }
 
 .feature3 i,
