@@ -1,5 +1,1 @@
-RewriteEngine On
-
-RewriteCond %{REQUEST_URI} !maintenance\.php$
-RewriteRule . maintenance.html
-
+ErrorDocument 404 /404.html
