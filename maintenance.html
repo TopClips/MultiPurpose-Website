@@ -1,17 +1,52 @@
-<!DOCTYPE html>
+<?php
+header(($_SERVER['SERVER_PROTOCOL'] ?? 'HTTP/1.0').' 503 Service Temporarily Unavailable',true,503);
+header('Retry-After: 3600');
+header('X-Powered-By:'); //hide PHP
+?><!DOCTYPE html>
+<!-- Source: https://www.wmtips.com/html/howto-make-a-perfect-site-maintenance-page.htm -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Maintenance...</title>
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+html, body {
+height: 100%;
+margin: 0;
+background: #000;
+}
+main {
+height: 100%;
+margin: 0 auto;
+max-width: 700px;
+padding: 30px;
+display: table;
+text-align: center;
+}
+main > * {
+display: table-cell;
+vertical-align: middle;
+}
 
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maintenance Mode | Multi-Bot</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="shortcut icon" type="image/icon" href="./img/favicon.ico"/>
+body
+{
+font: 20px Helvetica, sans-serif; color: #fff;
+}
+@keyframes blink {50% { color: transparent }}
+.dot { animation: 1s blink infinite }
+.dot:nth-child(2) { animation-delay: 250ms }
+.dot:nth-child(3) { animation-delay: 500ms }
+</style>
 </head>
-  <body>
-    <center><h2>We are currently in maintenace mode. Please stand by, a fix will be deployed shortly!</h2><IMG SRC="AAE381F4-97B2-4664-8051-985A09A797FA.gif"></centere>
-  </body>
-
+<body>
+<main>
+<div>
+<h1>Maintenance in progress<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></h1>
+<p>Sorry for the inconvenience but we're performing some maintenance right now. Please check back later. For now, you can enjoy watching a video that illustrates our typical maintenance process.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/insM7oUYNOE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</main>
+</body>
 </html>
