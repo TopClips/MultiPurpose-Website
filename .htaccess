@@ -1,13 +1,7 @@
- ErrorDocument 503 /maintenance.html
- <IfModule mod_rewrite.c>
- RewriteEngine On
- RewriteCond %{REQUEST_URI} !=/maintenance.html
- RewriteCond %{REMOTE_ADDR} !=127.0.0.1
- RewriteRule ^.*$ - [R=503,L]
- </IfModule>
-
-
-
-
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REMOTE_ADDR} !^11\.111\.111\.111
+RewriteCond %{REQUEST_URI} !^/maintenance\.html$
+RewriteRule ^(.*)$ http://multibotfd.vercel.app/maintenance.html [R=307,L]
 
 ErrorDocument 404 /404.html
