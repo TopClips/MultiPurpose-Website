@@ -301,7 +301,7 @@ header {
 .feature1 i,
 .feature1 h4,
 .feature1 .cta {
-    color: #42b7ca;
+    color: #666df2;
 }
 
 .feature1:hover {
@@ -311,7 +311,7 @@ header {
 .feature2 i,
 .feature2 h4,
 .feature2 .cta {
-    color: #ad1d35;
+    color: #666df2;
 }
 
 .feature2:hover {
@@ -321,7 +321,7 @@ header {
 .feature3 i,
 .feature3 h4,
 .feature3 .cta {
-    color: #b1b1b1;
+    color: #666df2;
 }
 
 .feature3:hover {
