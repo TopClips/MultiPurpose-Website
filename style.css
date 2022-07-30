@@ -13,6 +13,10 @@
     --very-small-text-color: #999999;
 }
 
+img {
+  border-radius: 90%;
+}
+
 /* random */
 h1 {
     color: var(--heading-color);
