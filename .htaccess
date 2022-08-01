@@ -1,6 +1,1 @@
 ErrorDocument 404 /404.html
-
-RewriteEngine on
-RewriteCond %{HTTP_USER_AGENT} !(iphone|ipad|android|blackberry|windows\ phone) [NC]
-RewriteCond %{HTTP_HOST} ^m\.example\.com$ [NC]
-RewriteRule ^ http://www.example.com
