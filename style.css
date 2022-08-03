@@ -38,6 +38,9 @@
 img {
   border-radius: 10%;
 }
+iframe {
+  border-radius: 10%;
+}
 
 /* random */
 h1 {
